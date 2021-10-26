@@ -5,6 +5,24 @@
 3. [References](#references)
 
 ### Third Party API
+Pada saat bikin apps, kita tidak mungkin bikin / menyediakan semua data sendiri.
+
+Pasti harus "narik" data dari tempat lain.
+
+Ingat, pada saat membuat API, kita menyediakan "data" untuk digunakan oleh aplikasi.
+
+Berarti kita juga bisa mengkonsumsi API dari tempat lain juga donk?
+
+Itulah yang dinamakan Third Party API !
+
+Pada pembelajaran ini kita akan menggunakan axios
+
+Penarik data dari API (HTTP Client Library)
+
+Cara instalasi
+```shell
+npm i axios
+```
 
 ### Express Error Handling
 Pada saat menuliskan kode pada routing express yang ada, seringkali ditemukan adanya kesamaan kode untuk handling error bukan?
