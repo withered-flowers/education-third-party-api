@@ -30,7 +30,7 @@
     GET /github/repos
       Listing semua repo yang dimiliki oleh si user, yang publik saja
     GET /github/pull-request 
-      Listing semua pull request dari rmt-17-quimper-fox/p2-cms-integration-server
+      Listing semua pull request dari <remote_org>/<remote_repo>
 */
 
 require("dotenv").config();
@@ -91,7 +91,7 @@ app.get("/github/repos", async (req, res) => {
 
 app.get("/github/pull-request", async (req, res) => {
   const response = await instance.get(
-    `/repos/rmt-17-quimper-fox/p2-cms-integration-server/pulls`,
+    `/repos/${process.env.GITHUB_ORGS}/${process.env.GITHUB_ORGS_REPO}/pulls`,
     {
       params: {
         direction: "asc",
