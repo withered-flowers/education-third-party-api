@@ -4,6 +4,8 @@
 2. [Express Error Handling](#express-error-handling)
 3. [References](#references)
 
+Stats: Hanya Garis Besar Pembelajaran saja
+
 ### Third Party API
 Pada saat bikin apps, kita tidak mungkin bikin / menyediakan semua data sendiri.
 
