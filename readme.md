@@ -24,6 +24,35 @@ Cara instalasi
 npm i axios
 ```
 
+Misalnya pada pembelajaran kali ini kita menggunakan Third Party API dari repository kode terbesar sedunia: Github !
+
+Step by Stepnya adalah sebagai berikut
+```
+Mulai dari baca github
+  https://docs.github.com/en/rest
+  https://docs.github.com/en/rest/overview/resources-in-the-rest-api
+    Dari sini diketahui
+      URL dasar dari github API adalah: 
+        - https://api.github.com
+      Secara eksplisit butuh Header 
+        Header adalah [Key - Value] property tambahan pada HTTP
+        Formatnya adalah Key: Value
+        
+        Header yang diminta untuk github adalah
+        - Accept: application/vnd.github.v3+json
+  https://docs.github.com/en/rest/overview/other-authentication-methods#via-oauth-and-personal-access-tokens
+    Dari sini diketahui butuh authentikasi juga via PAT (Personal Access Token)
+      Authorization:
+        - username: <username_orang_yang_akan_mengakses>
+        - password: <personal_access_token>
+
+  Endpoint Github yang digunakan:
+    - https://docs.github.com/en/rest/reference/repos#list-repositories-for-a-user
+    - https://docs.github.com/en/rest/reference/pulls#list-pull-requests
+```
+
+Barulah setelah ini kita akan mulai mengkoding dengan express dan axios ini !
+
 ### Express Error Handling
 Pada saat menuliskan kode pada routing express yang ada, seringkali ditemukan adanya kesamaan kode untuk handling error bukan?
 
